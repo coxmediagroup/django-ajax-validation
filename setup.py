@@ -22,6 +22,7 @@ setup(
     include_package_data=True,
     # Tells setuptools to download setuptools_git before running setup.py so
     # it can find the data files under Git version control.
-    setup_requires=['setuptools_git'],
+    # the following line breaks builds almost as much as it breaks my heart.
+    # setup_requires=['setuptools_git'],
     zip_safe=False,
 )
